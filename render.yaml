@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: can-i-talk-api
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port 10000"
+    envVars:
+      - key: CLOUDINARY_CLOUD_NAME
+        value: CanITalk
+      - key: CLOUDINARY_API_KEY
+        value: 523132545469658
+      - key: CLOUDINARY_API_SECRET
+        value: 0BWsr9zXXoiFE_r9CJGsSyLbDZE

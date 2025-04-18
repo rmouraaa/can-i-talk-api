@@ -1,0 +1,21 @@
+# Ignorar o .env com as chaves da Cloudinary
+.env
+
+# Ignorar arquivos temporários
+*.pyc
+__pycache__/
+static/
+*.wav
+
+# Ignorar ambientes virtuais
+.venv/
+env/
+venv/
+
+# Ignorar pastas de IDEs
+.vscode/
+.idea/
+
+# Outros arquivos de cache e sistema
+.DS_Store
+Thumbs.db
